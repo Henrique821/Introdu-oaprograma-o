@@ -22,4 +22,19 @@ if modo=="colheita":
     print("iniciando modo colheita... ")
 if modo=="irrigação":
     print("iniciando modo irrigação... ")
-    
+    if bat >= 50:
+        if temp >= 10:
+            if temp <=35:
+                if umi >= 30:
+                    if umi <= 80:
+                        print("robõ autorizado a iniciar a operação!")
+                else:
+                    print("Operação negada! verifique as condições do ambiente")
+            else:
+                print("Operação negada! Verifique as condições do ambiente")
+        else:
+                print("Operação negada! Verifique as condições do ambiente")
+    else:
+                print("Operação negada! Verifique as condições do ambiente")
+else:
+                print("Operação negada! Verifique as condições do ambiente") 
